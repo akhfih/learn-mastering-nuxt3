@@ -5,3 +5,12 @@ export type LessonWithPath = Lesson & {
 };
 
 
+export type ChapterProgress = {
+  [key: string]: boolean;
+};
+
+export type CourseProgress = {
+  [key: string]: ChapterProgress;
+};
+
+
